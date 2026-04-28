@@ -60,6 +60,7 @@ plugins:
 comments:
   provider: "giscus"
   giscus:
+    repo                 : "arminkz/blog"
     repo_id              : "R_kgDOSPI0nA"
     category_name        : "Comments"
     category_id          : "DIC_kwDOSPI0nM4C76C3"
