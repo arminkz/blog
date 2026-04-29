@@ -60,20 +60,7 @@ plugins:
 
 # Comments
 comments:
-  provider: "giscus"
-  giscus:
-    repo                 : "arminkz/blog"
-    repo_id              : "R_kgDOSPI0nA"
-    category_name        : "Comments"
-    category_id          : "DIC_kwDOSPI0nM4C76C3"
-    discussion_term      : "pathname"
-    reactions_enabled    : "1"
-    theme                : "preferred_color_scheme"
-    strict               : "0"
-    emit_metadata        : "0"
-    input_position       : "bottom"
-    lazy                 : true
-
+  provider: "custom"
 
 author:
   name   : "Armin Kazemi"
