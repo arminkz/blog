@@ -1,6 +1,5 @@
 {% if page.comments %}
   <section class="page__comments">
-    <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h4>
-    {% include comments/utterances.html %}
+{% include comments/utterances.html %}
   </section>
 {% endif %}
