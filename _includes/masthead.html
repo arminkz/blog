@@ -8,13 +8,12 @@
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title | escape_once | strip }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
+        <a class="site-title" href="https://arminkz.github.io">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px; position: relative; top: -2px;"><polyline points="15 18 9 12 15 6"/></svg>Return
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            {% assign downcase_link = link.url | downcase | remove: '/' %}
+            {% assign downcase_link = link.title | downcase | remove: '/' %}
             {% assign downcase_page = page.url | downcase | remove: '/' %}
             <li class="masthead__menu-item">
               <a
